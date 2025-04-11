@@ -1,0 +1,28 @@
+<ion-list line="none">
+  <ion-item>
+    <h2>Triángulo</h2>
+  </ion-item>
+  <ion-item>
+    <div style="display: flex; align-items: center;">
+      <p style="margin-right: 10px;">
+        El perímetro de un triángulo es la suma de las longitudes de sus tres lados. En otras palabras, es la medida total del contorno o borde del triángulo.
+      </p>
+      <img src="assets/images/triangulo.jpg" alt="Triángulo" style="width: 150px; height: 150px;">
+    </div>
+  </ion-item>
+  <ion-item>
+    <ion-input [(ngModel)]="ladoA" type="number" label="Lado A" placeholder="Ingresa un número"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input [(ngModel)]="ladoB" type="number" label="Lado B" placeholder="Ingresa un número"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input [(ngModel)]="ladoC" type="number" label="Lado C" placeholder="Ingresa un número"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-button (click)="CalcularTriangulo()">Calcular Perímetro del Triángulo</ion-button>
+  </ion-item>
+  <ion-item>
+    {{ Resultado }}
+  </ion-item>
+  </ion-list>  
